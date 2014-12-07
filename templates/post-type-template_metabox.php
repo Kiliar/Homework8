@@ -34,7 +34,7 @@ function ajax_magic_javascript() { ?>
                 $meta_c = $("input[name=meta_c]"),
                 data = {
                 'action': 'ajax_magic',
-                'ajax_post_id': <?php echo $_GET['post']; ?>,
+                'ajax_post_id': <?php the_ID(); ?>,
                 'meta_a': $meta_a.val(),
                 'meta_b': $meta_b.val(),
                 'meta_c': $meta_c.val()
